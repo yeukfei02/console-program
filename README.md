@@ -1,5 +1,7 @@
 # console-program
 
+assume command should be in the below order, and must be call `create canvas` first
+
 ```zsh
 Command 		Description
 C w h           Should create a new canvas of width w and height h.
