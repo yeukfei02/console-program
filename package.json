@@ -33,7 +33,7 @@
   "scripts": {
     "dev": "ts-node-dev index.ts",
     "start": "node ./dist/index.js",
-    "build": "rimraf ./dist ./data .prompt_hist.txt && tsc",
+    "build": "rimraf ./dist ./data && tsc",
     "lint": "eslint '*/**/*.{ts,tsx}' --quiet --fix",
     "test": "jest",
     "commit": "git-cz",
