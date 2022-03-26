@@ -2,9 +2,9 @@ import BaseClass from "./baseClass";
 import { getData, clearData } from "../helper/helper";
 
 class ConsoleProgram extends BaseClass {
-  private dataList: any[] = [];
-
   createCanvas() {
+    const dataList = [];
+
     // setup dataList
     for (let y = 0; y < this.height + 2; y++) {
       const yList = [];
@@ -44,11 +44,11 @@ class ConsoleProgram extends BaseClass {
         }
       }
 
-      this.dataList.push(yList);
+      dataList.push(yList);
     }
 
     // store dataList
-    this.storeDataList(this.dataList);
+    this.storeDataList(dataList);
 
     // retrieve dataList
     this.retrieveDataList();
