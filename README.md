@@ -93,7 +93,7 @@ $ yarn run lint
 // create canvas
 $ C <width> <height>
 
-// draw horizontal line (horizontal, vertical)
+// draw line (horizontal, vertical)
 $ L <x1> <y1> <x2> <y2>
 
 // draw rectangle
