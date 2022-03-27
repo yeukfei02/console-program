@@ -1,11 +1,15 @@
 import ConsoleProgram from "../src/consoleProgram";
-import { getData } from "./../helper/helper";
+import { getData, clearData } from "../helper/helper";
 
 describe("ConsoleProgram test", () => {
   let consoleProgram: ConsoleProgram;
 
   beforeEach(() => {
     consoleProgram = new ConsoleProgram(20, 4);
+  });
+
+  afterAll(() => {
+    clearData();
   });
 
   describe("when create consoleProgram", () => {
